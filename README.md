@@ -1,6 +1,7 @@
 ## Dags Construction Services - Project Documentation
 
-![alt text]("C:\Users\ACER\Desktop\DAGA\PROJECTS\fonicy-html\screenshots\Fonicy - Google Chrome 9_25_2024 4_31_47 PM.png")
+![Docker Hub Screenshot](./screenshots/docker-hub-screenshot.png)
+
 
 
 
@@ -48,6 +49,7 @@ CMD ["nginx", "-g", "daemon off;"]
 - **Copy Files**: We copy the HTML and CSS files into the Nginx folder for serving.
 - **Expose Port 80**: The container exposes port 80, so the application will be accessible via this port.
 - **CMD**: The default command runs Nginx to serve the files.
+
 
 ---
 
@@ -157,7 +159,7 @@ This will upload the image to DockerHub, making it publicly accessible in my rep
    Once the external IP is ready, I can access the dags-construction application via `http://localhost:8080`.<p>
 
   ![<alt text>]("C:\Users\ACER\Desktop\DAGA\PROJECTS\fonicy-html\screenshots\Fonicy - Google Chrome 9_25_2024 4_31_47 PM.png")<p>
-  
+
 ---
 
 ### Step 7: Cleanup
