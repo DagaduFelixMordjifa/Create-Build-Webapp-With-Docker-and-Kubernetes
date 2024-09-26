@@ -1,0 +1,31 @@
+apiVersion: apps/v1
+kind: Deployment
+metadata:
+  name: dags-construction-deployment
+spec:
+  replicas: 3
+  selector:
+    matchLabels:
+      app: dags-construction
+  template:
+    metadata:
+      labels:
+        app: dags-construction
+    spec:
+      containers:
+      - name: dags-construction
+        image: dagadufelix/dags-construction:latest
+        ports:
+        - containerPort: 80
+---
+apiVersion: v1
+kind: Service
+metadata:
+  name: dags-construction-service
+spec:
+  type: LoadBalancer
+  ports:
+  - port: 80
+    targetPort: 80
+  selector:
+    app: dags-construction
