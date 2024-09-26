@@ -1,6 +1,8 @@
 ## Dags Construction Services - Project Documentation
 
-![alt text]("C:\Users\ACER\Videos\Captures\Fonicy - Google Chrome 9_25_2024 4_31_47 PM.png")
+![alt text]("C:\Users\ACER\Desktop\DAGA\PROJECTS\fonicy-html\screenshots\Fonicy - Google Chrome 9_25_2024 4_31_47 PM.png")
+
+
 
 This document outlines the technical details of the **Dags Construction Services** project. The project consists of a simple static website of dags construction.
 
@@ -92,7 +94,7 @@ This command:
 - Maps port `8080` on my local(host) machine to port `80` in the container (`-p 8080:80`).
 
 I can now access the Cafe Menu by visiting `http://localhost:8080` in my browser.<p>
-![alt text]("C:\Users\ACER\Videos\Captures\Screenshot_25-9-2024_172946_localhost.jpeg")<p>
+![alt text]("C:\Users\ACER\Desktop\DAGA\PROJECTS\fonicy-html\screenshots\Fonicy - Google Chrome 9_25_2024 4_31_47 PM.png")<p>
 
 ---
 ### Step 5: Push the Docker Image to DockerHub
@@ -111,7 +113,7 @@ docker push "dagadufelix/dags-construction:latest
 
 This will upload the image to DockerHub, making it publicly accessible in my repo.
 
-![<alt text>]("C:\Users\ACER\Videos\Captures\Docker Hub Container Image Library _ App Containerization - Google Chrome 9_25_2024 9_27_00 PM.png")<p>
+![<alt text>]("C:\Users\ACER\Desktop\DAGA\PROJECTS\fonicy-html\screenshots\Docker Hub Container Image Library _ App Containerization - Google Chrome 9_25_2024 9_27_00 PM.png")<p>
 
 ---
 
@@ -148,11 +150,14 @@ This will upload the image to DockerHub, making it publicly accessible in my rep
    NAME                            READY   UP-TO-DATE   AVAILABLE      AGE
    dags-construction-deployment    3/3       3            3           8m22s
    ```
+  ![<alt text>]("C:\Users\ACER\Desktop\DAGA\PROJECTS\fonicy-html\screenshots\Screenshot 9_25_2024 9_02_26 PM.png")<p>
+
 
    ```
    Once the external IP is ready, I can access the dags-construction application via `http://localhost:8080`.<p>
 
-   ![alt text]("C:\Users\ACER\Videos\Captures\Fonicy - Google Chrome 9_25_2024 4_31_47 PM.png")<p>
+  ![<alt text>]("C:\Users\ACER\Desktop\DAGA\PROJECTS\fonicy-html\screenshots\Fonicy - Google Chrome 9_25_2024 4_31_47 PM.png")<p>
+  
 ---
 
 ### Step 7: Cleanup
