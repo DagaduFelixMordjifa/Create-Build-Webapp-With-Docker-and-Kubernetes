@@ -1,11 +1,7 @@
 ## Dags Construction Services - Project Documentation
-
-![Docker Hub Screenshot](./screenshots/docker-hub-screenshot.png)
-
-
-
-
 This document outlines the technical details of the **Dags Construction Services** project. The project consists of a simple static website of dags construction.
+
+![Docker Hub Screenshot](https://github.com/user-attachments/assets/c29e6aef-ce10-468c-8620-4f91f3445b5e)
 
 ---
 **Deployment Section** that explains how to containerize the Dags Construction Service  project using Docker, push the image to my DockerHub repo, and deploy it using both Docker and Kubernetes. This includes a detailed `Dockerfile`, instructions on pushing the image, and deploying it for web access.
@@ -96,11 +92,11 @@ This command:
 - Maps port `8080` on my local(host) machine to port `80` in the container (`-p 8080:80`).
 
 I can now access the Cafe Menu by visiting `http://localhost:8080` in my browser.<p>
-![alt text]("C:\Users\ACER\Desktop\DAGA\PROJECTS\fonicy-html\screenshots\Fonicy - Google Chrome 9_25_2024 4_31_47 PM.png")<p>
+![alt text](https://github.com/user-attachments/assets/5ee2e041-706d-45b9-86ab-b3b78dee2b11)
 
 ---
 ### Step 5: Push the Docker Image to DockerHub
-Having confirmed the imaged was built successfully, I will push it to my Dockerhub repository.
+Having confirmed the image was built successfully, I will push it to my Dockerhub repository.
 1. Log in to my DockerHub account via the command line:
 
 ```bash
@@ -115,7 +111,7 @@ docker push "dagadufelix/dags-construction:latest
 
 This will upload the image to DockerHub, making it publicly accessible in my repo.
 
-![<alt text>]("C:\Users\ACER\Desktop\DAGA\PROJECTS\fonicy-html\screenshots\Docker Hub Container Image Library _ App Containerization - Google Chrome 9_25_2024 9_27_00 PM.png")<p>
+![<alt text>]("![Fonicy - Google Chrome 9_25_2024 4_31_47 PM](https://github.com/user-attachments/assets/baac987d-b043-469e-8e62-363f8d6525bf)
 
 ---
 
@@ -129,7 +125,7 @@ This will upload the image to DockerHub, making it publicly accessible in my rep
 ---
 
    #### Explanation:
-   - **Deployment**: Creates a deployment that runs 3 replica of the Docker container from the image `dagadufelix/dags-construction`.
+   - **Deployment**: Creates a deployment that runs 3 replicas of the Docker container from the image `dagadufelix/dags-construction`.
    - **Service**: Exposes the deployment as a service of type `LoadBalancer` that listens on port 80.
 
 2. **Deploy the Application**:
@@ -152,14 +148,7 @@ This will upload the image to DockerHub, making it publicly accessible in my rep
    NAME                            READY   UP-TO-DATE   AVAILABLE      AGE
    dags-construction-deployment    3/3       3            3           8m22s
    ```
-  ![<alt text>]("C:\Users\ACER\Desktop\DAGA\PROJECTS\fonicy-html\screenshots\Screenshot 9_25_2024 9_02_26 PM.png")<p>
-
-
-   ```
-   Once the external IP is ready, I can access the dags-construction application via `http://localhost:8080`.<p>
-
-  ![<alt text>]("C:\Users\ACER\Desktop\DAGA\PROJECTS\fonicy-html\screenshots\Fonicy - Google Chrome 9_25_2024 4_31_47 PM.png")<p>
-
+  ![<alt text>]("![Screenshot 9_25_2024 9_02_26 PM](https://github.com/user-attachments/assets/6f23ae0a-6178-4105-9eba-a2b161c1588a)
 ---
 
 ### Step 7: Cleanup
@@ -195,4 +184,19 @@ In this section, we covered:
 
 ---
 ### Conclusion:
-This documentation provides an overview of the building and application from scratch with the code and its functionality, helping to understand the structure and styling used in the Dags Construction project. Also, discusses how to build the containerise the application with docker and deploy it with either Docker or Kubernetes. 
+This documentation provides an overview of the building and application from scratch with the code and its functionality, helping to understand the structure and styling used in the Dags Construction project. Also, discusses how to build the containerise the application with docker and deploy it with either Docker or 
+
+## Related Shots from Dags Construction Project
+
+![Fonicy and 5 more pages - Profile 1 - Microsoft​ Edge 9_26_2024 4_23_13 PM](https://github.com/user-attachments/assets/dc4a6126-327c-4d4f-8943-252c0a9524e3)
+![Fonicy and 5 more pages - Profile 1 - Microsoft​ Edge 9_26_2024 4_23_28 PM](https://github.com/user-attachments/assets/0c7972ec-fc26-4fdf-9fbb-be63e9b0c6a3)
+![Fonicy and 5 more pages - Profile 1 - Microsoft​ Edge 9_26_2024 4_23_47 PM](https://github.com/user-attachments/assets/17868432-93e2-48ec-995e-8104b3c59753)
+![Fonicy and 5 more pages - Profile 1 - Microsoft​ Edge 9_26_2024 4_24_06 PM](https://github.com/user-attachments/assets/f515cec3-c343-43e9-bb9d-0ce3b33e30f9)
+![Fonicy and 5 more pages - Profile 1 - Microsoft​ Edge 9_26_2024 4_24_18 PM](https://github.com/user-attachments/assets/7b89ac9e-b965-425c-80d3-a1cda34a2bea)
+![Fonicy and 5 more pages - Profile 1 - Microsoft​ Edge 9_26_2024 4_24_41 PM](https://github.com/user-attachments/assets/4b6131ff-9694-4dd3-8a38-5d3ae35f176a)
+
+
+
+
+
+Kubernetes. 
